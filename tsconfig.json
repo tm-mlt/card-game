@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "Phaser": ["node_modules/phaser/dist/phaser"]
+    },
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "**/*.ts",
+  ],
+  "files": ["node_modules/phaser/types/phaser.d.ts"]
+}

@@ -1,0 +1,13 @@
+export enum CONNECTION_EVENTS {
+  OPEN = 'CONNECTION:OPEN',
+  CLOSE = 'CONNECTION:CLOSE',
+  CONNECTED = 'CONNECTION:CONNECTED',
+  DISCONNECTED = 'CONNECTION:DISCONNCTED',
+  ERROR = 'CONNECTION:ERROR',
+  PEERS_UPDATE = 'CONNECTION:PEERS_UPDATE',
+}
+
+export interface IConnection {
+  id : string;
+  on: (event: CONNECTION_EVENTS, cb: () => void) => void;
+}
